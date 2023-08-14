@@ -16,9 +16,9 @@
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77,181,255,0.4);
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255,255,255,0.6);
+  --color-light: rgba(255, 255, 255, 0.6);
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -30,6 +30,11 @@
 /* Scroll behavior for the whole website */
 html {
   scroll-behavior: smooth;
+  --cursor-color: var(--color-primary)
+}
+
+html.dark-mode {
+  --cursor-color: #fff
 }
 
 /* No scrollbar for our website */
@@ -43,6 +48,13 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(../src/assets/bg-texture.png);
+  /* 
+  ackground: url(../src/assets/bg-texture-new.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  */
 }
 
 /* ======================= GENERAL STYLES ======================== */
@@ -52,13 +64,11 @@ body {
   margin: 0 auto;
 }
 
-
-
-h1,h2.h3,h4,h5 {
+h1, h2.h3, h4, h5 {
   font-weight: 500;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
@@ -66,12 +76,12 @@ section {
   margin-top: 8rem;
 }
 
-section > h2, section > h5 {
+section>h2, section>h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-section > h2 {
+section>h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
 }
@@ -134,10 +144,7 @@ img {
     width: var(--container-width-sm);
   }
 
-  section > h2 {
+  section>h2 {
     margin-bottom: 2rem;
   }
 }
-
-
-
