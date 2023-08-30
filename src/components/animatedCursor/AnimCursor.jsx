@@ -5,7 +5,7 @@ const AnimCursor = () => {
   return (
     <AnimatedCursor
       innerSize={8}
-      outerSize={35}
+      outerSize={18}
       innerScale={1}
       outerScale={2}
       outerAlpha={0}

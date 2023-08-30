@@ -22,8 +22,22 @@ const customTheme = createTheme({
       fontSize: "1.2rem",
     },
   },
- 
+  components: {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          backgroundColor: "var(--color-primary)",
+          color: "var(--color-white)",
+          fontFamily: 'sans-serif',
+          fontSize: '12px',
+          fontWeight: '600'
+        },
+      },
+    },
+  },
 });
+
+
 
 export default customTheme;
 

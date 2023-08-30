@@ -2,7 +2,9 @@ import React from "react";
 import "./header.css";
 import { Box, Typography } from "@mui/material";
 import Actions from "./Actions";
-import Me from '../../assets/Rashed Image without background.png'
+import HeaderSocials from "./HeaderSocials";
+import Me from "../../assets/Rashed Image without background.png";
+import AnimatedButton from "./animatedButton";
 const Header = () => {
   return (
     <header>
@@ -13,12 +15,21 @@ const Header = () => {
           Front-end Developer
         </Typography>
         <Actions />
-
+        <HeaderSocials />
         <Box className="me">
           <img src={Me} alt="Nur Mohammad Rashed" />
         </Box>
-
-        <a href="#contact" className="scroll__down">Scroll Down</a>
+        <Box
+          className="scroll__down"
+          sx={{
+            position: "absolute",
+            right: "-2.3rem",
+            bottom: "6rem",
+            animation: "down 1.5s infinite",
+          }}
+        >
+          <AnimatedButton />
+        </Box>
       </Box>
     </header>
   );

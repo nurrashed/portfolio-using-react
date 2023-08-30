@@ -1,0 +1,71 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: .7rem 1.5rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: .8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+@keyframes iconShake {
+    0% {
+        transform: Scale(1.5) rotate(0);
+    }
+
+    15% {
+        transform: Scale(1.5) rotate(10deg);
+    }
+
+    30% {
+        transform: Scale(1.5) rotate(-10deg);
+    }
+
+    45% {
+        transform: Scale(1.5) rotate(8deg);
+    }
+
+    60% {
+        transform: Scale(1.5) rotate(-8deg);
+    }
+
+    75% {
+        transform: Scale(1.5) rotate(4deg);
+    }
+
+    85% {
+        transform: Scale(1.5) rotate(-4deg);
+    }
+
+    92% {
+        transform: Scale(1.5) rotate(2deg);
+    }
+
+    100% {
+        transform: Scale(1.5) rotate(0);
+    }
+}

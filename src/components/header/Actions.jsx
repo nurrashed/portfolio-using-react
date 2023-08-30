@@ -7,7 +7,7 @@ import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 const Actions = () => {
   return (
     <>
-      <Box className="cta">
+      <Box className="action">
         <Button
           endIcon={<DownloadForOfflineOutlinedIcon />}
           href={CV}
