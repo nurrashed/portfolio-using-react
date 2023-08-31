@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Me from "./../../assets/Rashed at Linköping.jpg";
 import MilitaryTechOutlinedIcon from "@mui/icons-material/MilitaryTechOutlined";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
